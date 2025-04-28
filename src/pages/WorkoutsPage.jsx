@@ -1,3 +1,5 @@
+import Workouts from "../components/Workouts";
+
 export default function WorkoutsPage() {
-  return <div>WorkoutsPage</div>;
+  return <Workouts />;
 }
