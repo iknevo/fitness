@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <div className="p-6 flex flex-col gap-4 md:gap-8 h-full">
+    <div className="p-6 pb-12 flex flex-col gap-4 md:gap-8 h-full">
       <div className="flex items-center justify-between px-6">
         <h1 className="text-2xl font-bold">Workout Plans</h1>
         <div className="flex items-center bg-gray-700 rounded-4xl overflow-hidden">

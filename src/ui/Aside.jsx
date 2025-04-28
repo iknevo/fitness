@@ -2,13 +2,14 @@ import { FaAppleAlt, FaHome, FaUser } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
 import { PiBarbellFill } from "react-icons/pi";
 import { NavLink, useLocation } from "react-router";
+import Tooltip from "./Tooltip";
 
 const asideLinks = [
-  { path: "/home", icon: FaHome },
-  { path: "/meals", icon: FaAppleAlt },
-  { path: "/workouts", icon: PiBarbellFill },
-  { path: "/profile", icon: FaUser },
-  { path: "/settings", icon: IoMdSettings },
+  { title: "Home", path: "/home", icon: FaHome },
+  { title: "Meals", path: "/meals", icon: FaAppleAlt },
+  { title: "Workouts", path: "/workouts", icon: PiBarbellFill },
+  { title: "Profile", path: "/profile", icon: FaUser },
+  { title: "Settings", path: "/settings", icon: IoMdSettings },
 ];
 
 export default function Aside() {
@@ -30,9 +31,11 @@ export default function Aside() {
             )}`}
             key={link.path}
           >
-            <NavLink to={link.path}>
-              <link.icon className="text-2xl text-current" />
-            </NavLink>
+            <Tooltip text={link.title}>
+              <NavLink to={link.path}>
+                <link.icon className="text-2xl text-current" />
+              </NavLink>
+            </Tooltip>
           </li>
         ))}
       </ul>
