@@ -5,6 +5,7 @@ import MealsPage from "./pages/MealsPage";
 import PageNotFound from "./pages/PageNotFound";
 import ProfilePage from "./pages/ProfilePage";
 import SettingsPage from "./pages/SettingsPage";
+import SuccessPaymentPage from "./pages/SuccessPaymentPage";
 import WorkoutsPage from "./pages/WorkoutsPage";
 
 const myRouter = createBrowserRouter([
@@ -34,6 +35,10 @@ const myRouter = createBrowserRouter([
       {
         path: "settings",
         element: <SettingsPage />,
+      },
+      {
+        path: "success",
+        element: <SuccessPaymentPage />,
       },
     ],
   },

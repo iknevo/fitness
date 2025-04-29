@@ -51,9 +51,9 @@ export default function Workouts() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4">
           <div className=" flex flex-col gap-4">
-            <div className="bg-linear-to-b relative from-green-450 space-y-6 to-green-550 text-gray-950 p-8 rounded-lg">
+            <div className="bg-linear-to-b relative from-green-450 space-y-6 to-green-550 text-gray-950 p-6 rounded-lg">
               <span className="p-2 absolute bg-gray-950 text-gray-100 rounded-b-lg block top-0 right-0">
                 Save 77% off
               </span>
@@ -70,7 +70,7 @@ export default function Workouts() {
               </div>
             </div>
 
-            <div className="relative space-y-6 bg-gray-800 text-gray-100 p-8 rounded-lg">
+            <div className="relative space-y-6 bg-gray-800 text-gray-100 p-6 rounded-lg">
               <span className="p-2 absolute bg-green-450  text-gray-800 rounded-b-lg block top-0 right-0">
                 Save 77% off
               </span>
@@ -87,21 +87,21 @@ export default function Workouts() {
               </div>
             </div>
           </div>
-          <div className="bg-[#1434CB] rounded-4xl py-4 flex items-center justify-center gap-6">
+          <button className="cursor-pointer bg-[#1434CB] rounded-4xl py-4 flex items-center justify-center gap-6">
             <img src={visa} alt="visa logo" />
             <p className="text-lg font-semibold">Pay with visa</p>
-          </div>
+          </button>
 
-          <div className="bg-[#4C096E] rounded-4xl py-4 flex items-center justify-center gap-6">
+          <button className="cursor-pointer bg-[#4C096E] rounded-4xl py-4 flex items-center justify-center gap-6">
             <img src={instaPay} alt="instaPay logo" />
             <p className="text-lg font-semibold">Pay with Instapay</p>
-          </div>
-          <div className="bg-gray-100 rounded-4xl py-3 flex items-center justify-center gap-6">
+          </button>
+          <button className="cursor-pointer bg-gray-100  rounded-4xl py-3 flex items-center justify-center gap-6">
             <img src={masterCard} alt="masterCard logo" />
             <p className="text-lg text-[#E9B040] font-semibold">
               Pay with MasterCard
             </p>
-          </div>
+          </button>
         </div>
       </div>
     </div>
